@@ -214,3 +214,146 @@ body {
   background-color: var(--azul-principal);
   transform: translateY(-2px);
 }
+
+.event-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.section-label {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--azul-escuro);
+  transform: uppercase;
+  border-left: 4px solid var(--laranja);
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--branco);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  font-size: 0.90rem;
+  font-weight: 600;
+  color: var(--laranja);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.event-info h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  margin-bottom: 32px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0;
+  border-bottom:#0f172a 1px solid var(--cinza-fundo);
+}
+
+.detail-row:nth-child(1) {
+  border-bottom: 1px solid var(--cinza-fundo);
+}
+
+.detail-row:nth-child(2) {
+  border-bottom: 1px solid var(--cinza-fundo);
+}
+
+.detail-row:nth-child(3) {
+  border-bottom: 1px solid var(--cinza-fundo);
+}
+
+.detail-label {
+  width: 120px;
+  font-size:0.85rem;
+  font-weight: 600;
+  color: var(--cinza-texto);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-value {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--preto-azul-texto);
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--preto-azul-texto);
+  margin-bottom: 24px;
+}
+
+.btn-orange {
+  align-self: flex-start;
+  background-color: var(--laranja);
+  color: var(--branco);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 180ms ease;
+}
+
+.btn-orange:hover {
+  background-color: var(--azul-principal);
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info {
+    padding: 32px 20px;
+  }
+
+  .event-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
