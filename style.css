@@ -413,3 +413,100 @@ tbody tr:last-child td {
   background-color: var(--cinza-fundo);
   border-radius: 8px;
 }
+
+/* Formulário */
+.formulario-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.formulario-texto {
+  padding-top: 16px;
+}
+
+.lista-check {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-check li {
+  margin-bottom: 10px;
+}
+
+.lista-check li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 30px;
+  background-color: var(--branco);
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-largo {
+  grid-column: 1 / -1;
+}
+
+.campo label,
+.campo legend {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #b8c3d3;
+  border-radius: 5px;
+  background-color: var(--branco);
+  color: var(--preto-azul-texto);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.grupo-opcoes {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #dbe3ee;
+}
+
+.grupo-opcoes label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 20px;
+  color: var(--preto-azul-texto);
+  font-weight: 400;
+}
+
+.grupo-opcoes input,
+.aceite input {
+  width: auto;
+}
+
+.aceite {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}

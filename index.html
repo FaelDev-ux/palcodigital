@@ -260,6 +260,40 @@
           </div>
         </div>
       </section>
+
+      <!-- Formulário -->
+      <section class="secao secao-clara" id="inscricao">
+        <div class="container formulario-container">
+          <div class="formulario-texto">
+            <div class="titulo-secao"><p>Garanta sua vaga</p><h2>Formulário de inscrição</h2></div>
+            <p>Preencha os dados ao lado. Os campos marcados com * são obrigatórios.</p>
+            <ul class="lista-check"><li>Inscrição gratuita</li><li>Confirmação por e-mail</li><li>Certificado digital</li></ul>
+          </div>
+
+          <form class="formulario" action="#" method="post">
+            <div class="campo campo-largo"><label for="nome">Nome completo *</label><input type="text" id="nome" name="nome" autocomplete="name" required /></div>
+            <div class="campo"><label for="email">E-mail *</label><input type="email" id="email" name="email" autocomplete="email" required /></div>
+            <div class="campo"><label for="telefone">Telefone *</label><input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000" required /></div>
+            <div class="campo campo-largo">
+              <label for="evento">Evento desejado *</label>
+              <select id="evento" name="evento" required>
+                <option value="">Selecione um evento</option>
+                <option>Conecta Future 2026</option><option>Jornada Acadêmica 2026</option><option>Festival Conecta Cultura</option>
+                <option>Workshop Carreira em Foco</option><option>Semana da Sustentabilidade</option><option>Empretech</option>
+                <option>Feira de Ciência e Tecnologia</option><option>Criatividade Digital</option><option>Fórum de Inclusão e Acessibilidade</option>
+              </select>
+            </div>
+            <fieldset class="campo campo-largo grupo-opcoes">
+              <legend>Forma de participação *</legend>
+              <label><input type="radio" name="participacao" value="presencial" required /> Presencial</label>
+              <label><input type="radio" name="participacao" value="online" /> On-line</label>
+            </fieldset>
+            <div class="campo campo-largo"><label for="mensagem">Observações ou necessidades de acessibilidade</label><textarea id="mensagem" name="mensagem" rows="4"></textarea></div>
+            <label class="aceite campo-largo"><input type="checkbox" name="termos" required /> Aceito os termos de participação e a política de privacidade. *</label>
+            <button class="botao botao-laranja campo-largo" type="submit">Finalizar inscrição</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
