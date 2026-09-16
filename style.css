@@ -361,3 +361,55 @@ p {
   color: var(--cinza-texto);
   font-size: 0.9rem;
 }
+
+/* Programação */
+.secao-azul {
+  background-color: var(--azul-escuro);
+}
+
+.titulo-secao-claro h2,
+.titulo-secao-claro span {
+  color: var(--branco);
+}
+
+.tabela-programacao {
+  overflow-x: auto;
+  background-color: var(--branco);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid #dbe3ee;
+  text-align: left;
+}
+
+th {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Benefícios */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.beneficio-card {
+  padding: 26px;
+  text-align: center;
+  background-color: var(--cinza-fundo);
+  border-radius: 8px;
+}
