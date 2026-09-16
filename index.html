@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Palco Digital: portal fictício de eventos acadêmicos, profissionais e culturais."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,165 +14,100 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Palco Digital</title>
+    <title>Palco Digital | Portal de Eventos</title>
   </head>
+
   <body>
+    <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
     <header class="cabecalho">
       <div class="cabecalho__conteudo">
-        <a class="cabecalho__logo" href="">
+        <a class="cabecalho__logo" href="#inicio" aria-label="Palco Digital - Início">
           <img
             class="cabecalho__logo-imagem"
             src="assets/images/logo-palco-digital.png"
-            alt="Logo do Palco Digital"
+            alt=""
           />
           Palco <span class="cabecalho__logo-destaque">Digital</span>
         </a>
 
         <nav class="cabecalho__navegacao" aria-label="Navegação principal">
           <ul class="cabecalho__menu">
-            <li class="cabecalho__item">Eventos</li>
-            <li class="cabecalho__item">Categorias</li>
-            <li class="cabecalho__item">Programação</li>
-            <li class="cabecalho__item">Por que Participar?</li>
-            <li class="cabecalho__item">Inscrição</li>
-            <li class="cabecalho__item">Sobre</li>
-            <li class="cabecalho__item">Contato</li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#beneficios">Por que participar?</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+            <li><a href="#sobre">Sobre</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-content">
-          <h1>
-            O seu palco para aprender, <br />
-            conectar e inspirar
-          </h1>
+    <main id="conteudo-principal">
+      <!-- Banner principal -->
+      <section class="hero-section" id="inicio">
+        <div class="container hero-content">
+          <p class="hero-tag">Conhecimento, cultura e conexões</p>
+          <h1>O seu palco para aprender, conectar e inspirar</h1>
           <p>
-            A plataforma unificada para grandes encontros do saber e da arte.
+            Encontre eventos acadêmicos, profissionais e culturais em um só lugar.
           </p>
-          <a href="#" class="btn-primary">
-            Conhecer programação<span class="arrow">&rarr;</span></a
-          >
+          <a class="botao botao-laranja" href="#eventos">Conhecer eventos</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="featured-event-section">
-      <div class="event-container">
-        <div class="section-label">
-          <span>EVENTO EM DESTAQUE</span>
-        </div>
-        <div class="event-card">
-          <div class="event-image">
+      <!-- Evento principal -->
+      <section class="secao" id="destaque">
+        <div class="container">
+          <div class="titulo-secao">
+            <p>Evento em destaque</p>
+            <h2>Conecta Future 2026</h2>
+          </div>
+
+          <article class="evento-destaque">
             <img
-              src="/assets/images/event.jpeg"
-              alt="Público em evento acadêmico"
+              src="assets/images/event.jpeg"
+              alt="Público acompanhando uma palestra em um grande auditório"
             />
-          </div>
-          <div class="event-info">
-            <span class="tag">Acadêmico</span>
-            <h2>
-              Congresso Internacional de Ciência, Tecnologia e Inovação 2024
-            </h2>
-            <div class="event-details">
-              <div class="detail-row">
-                <div class="detail-label">📅 Data</div>
-                <div class="detail-value">15 a 18 de outubro de 2024</div>
-              </div>
-              <div class="detail-row">
-                <div class="detail-label">🕒 Horário</div>
-                <div class="detail-value">08h00 às 20h00</div>
-              </div>
-              <div class="detail-row">
-                <div class="detail-label">📍 Local</div>
-                <div class="detail-value">
-                  Centro de Convenções Armando de Salles Oliveira — São Paulo,
-                  SP
-                </div>
-              </div>
+
+            <div class="evento-destaque__conteudo">
+              <span class="etiqueta">Tecnologia</span>
+              <h3>Congresso de Ciência, Tecnologia e Inovação</h3>
+              <ul class="lista-informacoes">
+                <li><strong>Data:</strong> 24 de outubro de 2026</li>
+                <li><strong>Horário:</strong> 8h às 18h</li>
+                <li><strong>Local:</strong> Centro de Convenções Palco Digital</li>
+              </ul>
+              <p>
+                Um encontro para estudantes, professores e profissionais debaterem
+                inteligência artificial, inovação e o futuro do trabalho.
+              </p>
+              <a class="botao botao-laranja" href="#inscricao">Inscrever-se agora</a>
             </div>
+          </article>
+        </div>
+      </section>
 
-            <p class="description">
-              O maior encontro multidisciplinar do Brasil reúne pesquisadores,
-              professores, estudantes e profissionais de todo o mundo para
-              discutir os avanços mais recentes em ciência aplicada, tecnologias
-              emergentes e soluções inovadoras para os desafios globais. Quatro
-              dias de palestras, painéis, workshops e apresentações de trabalhos
-              científicos.
-            </p>
+      <!-- Categorias -->
+      <section class="secao" id="categorias">
+        <div class="container">
+          <div class="titulo-secao">
+            <p>Explore por área</p>
+            <h2>Categorias de eventos</h2>
+          </div>
 
-            <a href="#" class="btn-orange"> Inscrever-se agora &rarr; </a>
+          <div class="categorias-grid">
+            <article class="categoria-card"><span aria-hidden="true">💻</span><h3>Tecnologia</h3><p>Programação, inovação e inteligência artificial.</p></article>
+            <article class="categoria-card"><span aria-hidden="true">🎓</span><h3>Acadêmico</h3><p>Congressos, pesquisas e encontros universitários.</p></article>
+            <article class="categoria-card"><span aria-hidden="true">💼</span><h3>Profissional</h3><p>Carreira, mercado de trabalho e networking.</p></article>
+            <article class="categoria-card"><span aria-hidden="true">🎭</span><h3>Cultura</h3><p>Arte, música, teatro, fotografia e literatura.</p></article>
+            <article class="categoria-card"><span aria-hidden="true">🌱</span><h3>Sustentabilidade</h3><p>Meio ambiente, responsabilidade social e futuro.</p></article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="categories-section">
-      <div class="categories-container">
-        <!-- Cabeçalho da Seção -->
-        <div class="section-header">
-          <h2>Categorias de eventos</h2>
-          <p>
-            Navegue pelas áreas temáticas do portal e encontre os eventos mais
-            relevantes para o seu perfil.
-          </p>
-        </div>
-
-        <!-- Grid de Categorias -->
-        <div class="categories-grid">
-          <!-- Card 1 (Ativo/Hover) -->
-          <a href="#" class="category-card active">
-            <div class="icon">💻</div>
-            <h3>Tecnologia</h3>
-            <p>
-              Programação, inteligência artificial, inovação, desenvolvimento e
-              tecnologia.
-            </p>
-          </a>
-
-          <!-- Card 2 -->
-          <a href="#" class="category-card">
-            <div class="icon">🎓</div>
-            <h3>Acadêmico</h3>
-            <p>
-              Congressos, seminários, palestras, pesquisas e encontros
-              universitários.
-            </p>
-          </a>
-
-          <!-- Card 3 -->
-          <a href="#" class="category-card">
-            <div class="icon">💼</div>
-            <h3>Profissional</h3>
-            <p>
-              Carreira, mercado de trabalho, networking, workshops e
-              desenvolvimento profissional.
-            </p>
-          </a>
-
-          <!-- Card 4 -->
-          <a href="#" class="category-card">
-            <div class="icon">🎭</div>
-            <h3>Cultura</h3>
-            <p>
-              Arte, música, teatro, fotografia, literatura e manifestações
-              culturais.
-            </p>
-          </a>
-
-          <!-- Card 5 -->
-          <a href="#" class="category-card">
-            <div class="icon">🌱</div>
-            <h3>Sustentabilidade</h3>
-            <p>
-              Meio ambiente, sustentabilidade, responsabilidade social e
-              inovação sustentável.
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
+    </main>
   </body>
 </html>
